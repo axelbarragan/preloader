@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PRELOADER</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 999999;
+			background: #fff;
+		}
+
+		.preloader > img {
+			position: absolute;
+			font-size: 36px;
+			line-height: 36px;
+			top: 45%;
+			left: 45%;
+			height: 128px;
+			width: 128px;
+			margin-top: -15px;
+			margin-left: -15px;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<div class="preloader"> <img src="squares.gif"></i>
+<span class="sr-only">Loading...</span></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script type="text/javascript">
+	var preloader = $('.preloader');
+	$(window).on('load', function(){
+		//preloader.remove();
+	});
+</script>
+</body>
+</html>
